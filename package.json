@@ -1,7 +1,7 @@
 {
   "name": "elysia-helmet",
   "description": "Help secure Elysia apps with various HTTP headers ",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "DevTobias",
   "keywords": [
@@ -18,7 +18,9 @@
   },
   "files": [
     "dist/index.js",
-    "dist/index.d.ts"
+    "dist/index.d.ts",
+    "dist/helmet.d.ts",
+    "dist/policies/*.d.ts"
   ],
   "scripts": {
     "build": "rm -rf dist && bun build src/index.ts --outdir ./dist --target bun --minify --external elysia && tsc"
